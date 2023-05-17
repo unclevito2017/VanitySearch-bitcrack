@@ -70,8 +70,11 @@ VanitySeacrh [-check] [-v] [-u] [-b] [-c] [-gpu] [-stop] [-i inputfile]
  -rp privkey partialkeyfile: Reconstruct final private key(s) from partial key(s) info.
  -sp startPubKey: Start the search with a pubKey (for private key splitting)
  -r rekey: Rekey interval in MegaKey, default is disabled
-```
- 
+`
+Puzzle 67 example
+VanitySearch-1.15.4_bitcrack_th512gr.exe -t 0 -gpu  --keyspace 74200FFFFFFFFFFFF:74301000000000000 -r 1000 1BY8GQb
+if you use -o found.txt all found will not be displayed but inserted in found txt
+
 Exemple (Windows, Intel Core i7-4770 3.4GHz 8 multithreaded cores, GeForce GTX 1050 Ti):
 ```
 C:\C++\VanitySearch\x64\Release>VanitySearch.exe -stop -gpu 1TryMe
