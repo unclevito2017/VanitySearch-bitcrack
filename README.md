@@ -60,8 +60,6 @@ VanitySeacrh [-check] [-v] [-u] [-b] [-c] [-gpu] [-stop] [-i inputfile]
  -gpu gpuId1,gpuId2,...: List of GPU(s) to use, default is 0
  -g gridSize1,gridSize2,...: Specify GPU(s) kernel gridsize, default is 8*(MP number)
  -m: Specify maximun number of prefixes found by each kernel call
- -s seed: Specify a seed for the base key, default is random
- -ps seed: Specify a seed concatened with a crypto secure random seed
  -t threadNumber: Specify number of CPU thread, default is number of core
  -nosse: Disable SSE hash function
  -l: List cuda enabled devices
@@ -69,7 +67,16 @@ VanitySeacrh [-check] [-v] [-u] [-b] [-c] [-gpu] [-stop] [-i inputfile]
  -kp: Generate key pair
  -rp privkey partialkeyfile: Reconstruct final private key(s) from partial key(s) info.
  -sp startPubKey: Start the search with a pubKey (for private key splitting)
- -r rekey: Rekey interval in MegaKey, default is disabled
+ -r rekey: Rekey interval in MegaKey, cpu=1000 gpu=100000
+
+ --keyspace START
+            START:END
+            START:+COUNT
+            :+COUNT
+            :END
+            Where START, END, COUNT are in hex format
+ --share M / N: Divide the keyspace into N equal shares, process the Mth share
+ --continue sessfile: Save / load progress from specified filed
 `
 Puzzle 67 example
 VanitySearch-1.15.4_bitcrack_th512gr.exe -t 0 -gpu  --keyspace 74200FFFFFFFFFFFF:74301000000000000 -r 1000 1BY8GQb
