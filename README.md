@@ -79,7 +79,16 @@ VanitySeacrh [-check] [-v] [-u] [-b] [-c] [-gpu] [-stop] [-i inputfile]
  --continue sessfile: Save / load progress from specified filed
 `
 Puzzle 67 example
-VanitySearch-1.15.4_bitcrack_th512gr.exe -t 0 -gpu  --keyspace 74200FFFFFFFFFFFF:74301000000000000 -r 1000 1BY8GQb
+VanitySearch-1.15.4_bitcrack_th512gr.exe -t 0 -gpu  --keyspace 74200FFFFFFFFFFFF:74301000000000000 -o found.txt -r 2000 1BY8GQbnu
+VanitySearch v1.15.4, add BitCrack mode
+[keyspace] start=0000000000000000000000000000000000000000000000074200FFFFFFFFFFFF
+[keyspace]   end=0000000000000000000000000000000000000000000000074301000000000000
+Difficulty: 51529903411245
+Search: 1BY8GQbnu [Compressed]
+Start at Wed May 17 12:29:36 2023
+Number of CPU thread: 0
+GPU: GPU #0 NVIDIA GeForce RTX 3060 Ti (38x0 cores) Grid(304x512)
+1045.085 MK/s (GPU 1045.085 MK/s) (2^36.75) [00:01:51 lost_TIME_left 2.2y][0]
 if you use -o found.txt all found will not be displayed but inserted in found txt
 
 Exemple (Windows, Intel Core i7-4770 3.4GHz 8 multithreaded cores, GeForce GTX 1050 Ti):
