@@ -9,7 +9,6 @@ th128gr, th256gr, th512gr - its constant NB_TRHEAD_PER_GROUP in GPUEngine.h
 
 th128gr - origin src, but modern gpu work better for th256gr or th512gr. try experimentally.
 
-Source: https://github.com/JeanLucPons/VanitySearch
 
 Thx JeanLuc for this instrument
 
@@ -39,7 +38,6 @@ VanitySearch may not compute a good grid size for your GPU, so try different val
 
 # Usage
 
-You can downlad latest release from https://github.com/JeanLucPons/VanitySearch/releases
 
 ```
 VanitySeacrh [-check] [-v] [-u] [-b] [-c] [-gpu] [-stop] [-i inputfile]
@@ -263,3 +261,4 @@ Priv (HEX): 0x398E7271AF3E5A78821C1ADFDE3EE90760A6B65F72D856CFE455B1264350BCE8
 
 VanitySearch is licensed under GPLv3.
 
+Donations: bc1qus09g0n5jwg79gje76zxqmzt3gpw80dcqspsmm
